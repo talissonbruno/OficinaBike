@@ -2,10 +2,10 @@
 package tela;
 
 
-public class TelaPrincipal extends javax.swing.JFrame {
+public class MenuPrincipal extends javax.swing.JFrame {
 
     
-    public TelaPrincipal() {
+    public MenuPrincipal() {
         initComponents(); 
        
     }
@@ -66,7 +66,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu5.setText("Edit");
         jMenuBar1.add(jMenu5);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/folder_system_15426.png"))); // NOI18N
         jMenu7.setText("Cadastros");
@@ -201,7 +201,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
 
-        miMainSair.setText("Sair");
+        miMainSair.setText("Troca Usuario");
         miMainSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miMainSairActionPerformed(evt);
@@ -217,11 +217,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 902, Short.MAX_VALUE)
+            .addGap(0, 1035, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 403, Short.MAX_VALUE)
+            .addGap(0, 735, Short.MAX_VALUE)
         );
 
         pack();
@@ -232,13 +232,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_mMainSairActionPerformed
 
     private void miMainSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMainSairActionPerformed
-            TelaDeLogin telaLogin = new TelaDeLogin();
+            Login telaLogin = new Login();
             telaLogin.setVisible(true);
             dispose();
     }//GEN-LAST:event_miMainSairActionPerformed
 
     private void miMainUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMainUsuarioActionPerformed
-        TelaDeUsuario telaUsuario = new TelaDeUsuario();
+        TelaUsuario telaUsuario = new TelaUsuario();
         add(telaUsuario);
         telaUsuario.setVisible(true);
         
@@ -280,20 +280,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         
 
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaPrincipal().setVisible(true);
+                new MenuPrincipal().setVisible(true);
             }
         });
     }
